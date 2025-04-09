@@ -1,0 +1,9 @@
+{
+  "name": "edubdd",
+  "version": "1.0.0",
+  "description": "automation test with cypress bdd",
+  "main": "index.js",
+  "repository": "https://github.com/Albarokah9/edubdd.git",
+  "author": "albar",
+  "license": "MIT"
+}
