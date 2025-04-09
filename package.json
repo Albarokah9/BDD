@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "https://github.com/Albarokah9/edubdd.git",
   "author": "albar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.3.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "reflect-metadata": "^0.2.2"
+  }
 }
