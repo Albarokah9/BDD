@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor');
 
 Given('I open the homepage', () => {
     cy.visit('http://zero.webappsecurity.com/login.html');
@@ -16,6 +16,9 @@ When('I logged into my account and searched for "online banking."', () => {
 });
 
 Then('I should see search results related to "Zero - Free Access to Online Banking"', () => {
+    cy.get('#searchTerm', { timeout: 10000 }).type('Online Banking {enter}')
+    cy.url().should('include', 'search.html')
+    cy.get('h2').should('contain.text', 'Search Results:')
     cy.get('ul').should('contain', 'li');
 });
 
