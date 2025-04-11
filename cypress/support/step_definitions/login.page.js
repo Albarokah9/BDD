@@ -1,7 +1,7 @@
 const URL = "http://zero.webappsecurity.com/login.html"; // Perbaiki URL di sini
 const USERNAME = '#user_login';
 const PASSWORD = '#user_password';
-const SIGN_IN = 'input[name="submit"]';
+const SIGN_IN = 'Sign in';
 
 class LoginPage {
     static visit()  {
@@ -14,7 +14,7 @@ class LoginPage {
         cy.get(PASSWORD).type(password);
     }
     static sigIn() {
-        cy.get(SIGN_IN).click();
+        cy.contains(SIGN_IN).click();
     }
 }
 
