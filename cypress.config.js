@@ -11,26 +11,33 @@
 
 // module.exports = defineConfig({
 //   video: false,
-//   defaultCommandTimeout: 5000, 
-//   pageLoadTimeout: 10000, 
+//   defaultCommandTimeout: 5000,
+//   pageLoadTimeout: 10000,
 //   e2e: {
-//     specPattern: "cypress/e2e/**/*.feature", //"**/*.feature", 
-//     supportFile: false, 
+//     specPattern: "cypress/e2e/**/*.feature", //"**/*.feature",
+//     supportFile: false,
 //     setupNodeEvents,
 //   },
 // })
 
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
-const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
+const {
+  addCucumberPreprocessorPlugin,
+} = require("@badeball/cypress-cucumber-preprocessor");
+const {
+  createEsbuildPlugin,
+} = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 async function setupNodeEvents(on, config) {
   // Tambahkan plugin Cucumber Preprocessor
   await addCucumberPreprocessorPlugin(on, config);
 
   // Gunakan bundler untuk memproses file
-  on("file:preprocessor", createBundler({ plugins: [createEsbuildPlugin(config)] }));
+  on(
+    "file:preprocessor",
+    createBundler({ plugins: [createEsbuildPlugin(config)] }),
+  );
 
   return config;
 }
