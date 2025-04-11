@@ -1,7 +1,7 @@
-Feature: Login to Application
+Feature: Login to Website
 
     As a valid user
-    I want to login into application
+    I want to login into Website
 
     Scenario: Valid login
         Given I open login page

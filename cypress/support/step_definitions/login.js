@@ -14,7 +14,7 @@
 //     cy.get('#account_summary_tab > a').should('be', 'visible')
 // })
 
-import LoginPage from './login.page'
+import LoginPage from '../page_objects/login.page'
 const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor')
 
 Given("I open login page", () => {
