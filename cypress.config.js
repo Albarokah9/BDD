@@ -14,7 +14,7 @@
 //   defaultCommandTimeout: 5000, 
 //   pageLoadTimeout: 10000, 
 //   e2e: {
-//     specPattern: "**/*.feature", 
+//     specPattern: "cypress/e2e/**/*.feature", //"**/*.feature", 
 //     supportFile: false, 
 //     setupNodeEvents,
 //   },
