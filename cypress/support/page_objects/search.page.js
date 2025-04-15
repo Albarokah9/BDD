@@ -1,10 +1,10 @@
-const SEARCH_INPUT = "#searchTerm";
+const SEARCH_INPUT = "#searchTerm"; // konstanta yang difeniniskan untuk menyimpan selector css dari element input search di halaman web
 const SEARCH_HEADER = "h2";
 const SEARCH_RESULT_LIST = "ul";
 
 class SearchPage {
   static enterSearchTerm(term) {
-    cy.get(SEARCH_INPUT, { timeout: 10000 }).type(`${term}{enter}`);
+    cy.get(SEARCH_INPUT).type(`${term}{enter}`);
   }
 
   static verifySearchPageLoaded() {

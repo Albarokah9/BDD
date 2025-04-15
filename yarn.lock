@@ -932,7 +932,7 @@
 
 "@bahmutov/cypress-esbuild-preprocessor@^2.2.4":
   version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@bahmutov/cypress-esbuild-preprocessor/-/cypress-esbuild-preprocessor-2.2.4.tgz#2724ac884702925739d8fde23dcf256f198408aa"
+  resolved "https://registry.npmjs.org/@bahmutov/cypress-esbuild-preprocessor/-/cypress-esbuild-preprocessor-2.2.4.tgz"
   integrity sha512-t5xOKK+a6PlsxgRBtZDzayUcPJGDLKJt1pwKK/Y8szuDPPF+DbEsrqL8fbKgE1+koPvOVaYMX4ggwQwqfk99hA==
   dependencies:
     debug "4.4.0"
