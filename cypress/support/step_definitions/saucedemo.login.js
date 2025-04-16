@@ -21,5 +21,5 @@ When('I click on the login button', () => {
     LoginPageSaucedemo.signIn();
 });
 Then('I should see the text "PRODUCTS" on the page', () => {
-    cy.get("#header_container").should("be.visible");
+    LoginPageSaucedemo.verifyLogin();
 });
