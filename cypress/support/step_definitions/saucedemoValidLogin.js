@@ -1,4 +1,4 @@
-import LoginPageSaucedemo from "../page_objects/saucedemoLogin.page";
+import LoginPageSaucedemo from "../page_objects/saucedemoValidLogin.page";
 
 const {
     Given,
