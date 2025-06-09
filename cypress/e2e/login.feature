@@ -1,4 +1,4 @@
-Feature: Login to Website
+Feature: Login to Website zero.webappsecurity.com
 
     As a valid user
     I want to login into Website
