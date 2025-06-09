@@ -1,9 +1,5 @@
 import LoginPage from "../page_objects/login.page";
-const {
-  Given,
-  When,
-  Then,
-} = require("@badeball/cypress-cucumber-preprocessor");
+const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
 Given("I open login page", () => {
   LoginPage.visit();
@@ -19,3 +15,4 @@ Then("I should see homepage", () => {
   cy.get("#account_summary_tab > a").should("contain", "Account Summary");
   cy.get("#account_summary_tab > a").should("be.visible");
 });
+
