@@ -4,6 +4,7 @@ Automation testing menggunakan BDD Cucumber dan Cypress untuk website Zero WebAp
 
 ## Tech Stack
 - **Framework**: Cypress + Cucumber BDD
+- **Framework**: Reporting: Cypress Mochawesome Reporter
 - **Websites**: 
   - Zero WebApp Security
   - Saucedemo
